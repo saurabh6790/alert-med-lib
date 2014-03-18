@@ -1,0 +1,56 @@
+[
+ {
+  "creation": "2014-03-18 12:34:12", 
+  "docstatus": 0, 
+  "modified": "2014-03-18 12:45:59", 
+  "modified_by": "Administrator", 
+  "owner": "Administrator"
+ }, 
+ {
+  "doctype": "DocType", 
+  "issingle": 0, 
+  "istable": 1, 
+  "module": "Core", 
+  "name": "__common__"
+ }, 
+ {
+  "doctype": "DocField", 
+  "in_list_view": 1, 
+  "name": "__common__", 
+  "parent": "Site Status Details", 
+  "parentfield": "fields", 
+  "parenttype": "DocType", 
+  "permlevel": 0
+ }, 
+ {
+  "create": 1, 
+  "doctype": "DocPerm", 
+  "name": "__common__", 
+  "parent": "Site Status Details", 
+  "parentfield": "permissions", 
+  "parenttype": "DocType", 
+  "permlevel": 0, 
+  "read": 1, 
+  "role": "Administrator", 
+  "write": 1
+ }, 
+ {
+  "doctype": "DocType", 
+  "name": "Site Status Details"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "site_name", 
+  "fieldtype": "Data", 
+  "label": "Site Name"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "status", 
+  "fieldtype": "Check", 
+  "label": "Status"
+ }, 
+ {
+  "doctype": "DocPerm"
+ }
+]

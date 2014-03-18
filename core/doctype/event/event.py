@@ -87,7 +87,7 @@ def get_events(start, end, user=None, for_reminder=False):
 	roles = webnotes.get_roles(user)
 	events = webnotes.conn.sql("""select name, subject, description,
 		starts_on, ends_on, owner, all_day, event_type, repeat_this_event, repeat_on,
-		monday, tuesday, wednesday, thursday, friday, saturday, sunday, doctor_name, patient, service
+		monday, tuesday, wednesday, thursday, friday, saturday, sunday, patient, service
 		from tabEvent where ((
 			(date(starts_on) between date('%(start)s') and date('%(end)s'))
 			or (date(ends_on) between date('%(start)s') and date('%(end)s'))

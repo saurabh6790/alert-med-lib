@@ -150,6 +150,9 @@ wn.ui.toolbar.Toolbar = Class.extend({
 				onclick="return wn.ui.toolbar.download_backup();"><i class="icon-fixed-width icon-download"></i> '
 				+wn._('Download Backup')+'</a></li>');
 		}
+		$('#toolbar-tools').append('<li><a href="https://login.teamviewer.com/Account/LogOn"  target="_blank"\
+				><i class="icon-fixed-width icon-download"></i> '
+				+wn._('Team Viewer')+'</a></li>');
 	},
 	set_user_name: function() {
 		var fn = user_fullname;
@@ -163,6 +166,8 @@ wn.ui.toolbar.Toolbar = Class.extend({
 			<i class="icon-fixed-width icon-signout"></i> '+wn._('Logout')+'</a></li>');
 	}
 });
+
+
 
 wn.ui.toolbar.update_notifications = function() {
 	var total = 0;

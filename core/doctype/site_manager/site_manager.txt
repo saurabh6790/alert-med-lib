@@ -1,0 +1,70 @@
+[
+ {
+  "creation": "2014-03-18 12:39:03", 
+  "docstatus": 0, 
+  "modified": "2014-03-18 13:20:41", 
+  "modified_by": "Administrator", 
+  "owner": "Administrator"
+ }, 
+ {
+  "doctype": "DocType", 
+  "issingle": 1, 
+  "module": "Core", 
+  "name": "__common__"
+ }, 
+ {
+  "doctype": "DocField", 
+  "name": "__common__", 
+  "parent": "Site Manager", 
+  "parentfield": "fields", 
+  "parenttype": "DocType", 
+  "permlevel": 0
+ }, 
+ {
+  "create": 1, 
+  "doctype": "DocPerm", 
+  "name": "__common__", 
+  "parent": "Site Manager", 
+  "parentfield": "permissions", 
+  "parenttype": "DocType", 
+  "permlevel": 0, 
+  "read": 1, 
+  "role": "Administrator", 
+  "write": 1
+ }, 
+ {
+  "doctype": "DocType", 
+  "name": "Site Manager"
+ }, 
+ {
+  "description": "eg:-  /home/indictrans/Documents/sites\nNote :- Case sensetive", 
+  "doctype": "DocField", 
+  "fieldname": "sites_path", 
+  "fieldtype": "Data", 
+  "label": "Sites Path"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "get_sites", 
+  "fieldtype": "Button", 
+  "label": "Get Sites", 
+  "options": "show_sites"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "site_status_details", 
+  "fieldtype": "Table", 
+  "label": "Site Status Details", 
+  "options": "Site Status Details"
+ }, 
+ {
+  "doctype": "DocField", 
+  "fieldname": "make_enable_dissable", 
+  "fieldtype": "Button", 
+  "label": "Make Enable Dissable", 
+  "options": "make_enable_dissable"
+ }, 
+ {
+  "doctype": "DocPerm"
+ }
+]
